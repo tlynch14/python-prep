@@ -50,3 +50,12 @@ SELECT *
 FROM movies
 ORDER BY imdb_rating DESC
 LIMIT 3;
+
+-- Casing (if/else)
+SELECT name, 
+  CASE 'Mood'
+  WHEN genre = 'romance' THEN 'Chill'
+  WHEN genre = 'comedy' THEN 'Chill'
+  ELSE 'Intense'
+END AS 'Review'
+FROM movies;
