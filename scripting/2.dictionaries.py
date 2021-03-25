@@ -24,3 +24,9 @@ def twoStrings(s1, s2):
     if set.intersection(new_set1,new_set2):
         return "YES"
     return "NO"
+
+# Translations - Ordering strings - lacks flexibility
+txt = "Hello Sam!"
+mytable = txt.maketrans("S", "P")
+
+print(txt.translate(txt.maketrans("S","P")))
